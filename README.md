@@ -1,4 +1,4 @@
-# Vending-Machine-Controller-System
+# Vending-Machine-Controller-System-Using-Verilog
 
 This project implements a Vending Machine Controller using Verilog, designed using a Mealy Finite State Machine (FSM) technique. The vending machine dispenses a water bottle for Rs. 15, accepting Rs. 5 and Rs. 10 coins, and returns the appropriate change if needed.
 
