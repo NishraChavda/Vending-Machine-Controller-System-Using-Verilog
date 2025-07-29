@@ -4,9 +4,9 @@ input clk,rst;
 input [1:0]in;
 output reg out;
 output reg[1:0]change;
-parameter [1:0]s0=2&#39;b00;
-parameter [1:0]s1=2&#39;b01;//Rs. 5
-parameter [1:0]s2=2&#39;b10;//Rs. 10
+parameter [1:0]s0=2'b00;
+parameter [1:0]s1=2'b01;//Rs. 5
+parameter [1:0]s2=2'b10;//Rs. 10
 reg [1:0] ps=s0;
 reg [1:0] ns;
 
@@ -23,67 +23,65 @@ begin
 if(ps==s0) //state 0: 0 Rs.
 begin
 if(in==s0)
-begin
-ns&lt;=s0;
-out&lt;=0;
-change=s0;
-end
+	begin
+	ns<=s0;
+	out<=0;
+	change=s0;
+	end
 else if(in==s1)
-begin
-ns&lt;=s1;
-out&lt;=0;
-change&lt;=s0;
-end
+	begin
+	ns<=s1;
+	out<=0;
+	change<=s0;
+	end
 else if(in==s2)
-begin
-ns&lt;=s2;
-out&lt;=0;
-change&lt;=s0;
+	begin
+	ns<=s2;
+	out<=0;
+	change<=s0;
+	end
 end
-end
-else if(ps==s1) //state 1:5 Rs.
-begin
-if(in==s0)
-begin
-ns&lt;=s0;
-out&lt;=0;
-change&lt;=s1;
-end
-else if(in==s1)
-begin
-
-ns&lt;=s2;
-out&lt;=0;
-change&lt;=s0;
-end
-else if(in==s2)
-begin
-ns&lt;=s0;
-out&lt;=1;
-change&lt;=s0;
-end
+ else if(ps==s1) //state 1:5 Rs.
+ begin
+ if(in==s0)
+	begin
+	ns<=s0;
+	out<=0;
+	change<=s1;
+	end
+ else if(in==s1)
+	begin
+	ns<=s2;
+	out<=0;
+	change<=s0;
+	end
+ else if(in==s2)
+	begin
+	ns<=s0;
+	out<=1;
+	change<=s0;
+	end
 end
 else if(ps==s2)//state 2 : 10 Rs.
 begin
 if(in==s0)
-begin
-ns&lt;=s0;
-out&lt;=0;
-change&lt;=s2;
-end
+	begin
+   ns<=s0;
+	out<=0;
+	change<=s2;
+	end
 else if(in==s1)
-begin
-ns&lt;=s0;
-out&lt;=1;
-change&lt;=s0;
-end
+	begin
+	ns<=s0;
+	out<=1;
+	change<=s0;
+	end
 else if(in==s2)
-begin
-ns&lt;=s0;
-out&lt;=1;
-change&lt;=s1;
+	begin
+	ns<=s0;
+	out<=1;
+	change<=s1;
+	end
 end
 end
-end
-
 endmodule
