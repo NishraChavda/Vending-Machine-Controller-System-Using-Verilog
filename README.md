@@ -51,6 +51,9 @@ The FSM correctly transitions through states based on coin inputs.
 
 Accurate product dispensing and change return functionality.
 
+**State Machine**
+<img width="610" height="396" alt="image" src="https://github.com/user-attachments/assets/ab1b64a6-e6b0-4fac-9892-542ae2432a52" />
+
 **Conclusion**
 
 The vending machine controller efficiently manages product dispensing and change returns using a simple FSM design. It is a useful reference for implementing real-world vending machine controllers.
