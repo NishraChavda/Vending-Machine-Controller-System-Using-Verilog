@@ -13,8 +13,8 @@ module vending_machine (
 
     reg [1:0] ps, ns;  // present and next state
 
-    always @(posedge clk or posedge rst) begin
-        if (rst)
+    always @(posedge clk) begin
+        if (!rst)
             ps <= s0;
         else
             ps <= ns;
