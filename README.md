@@ -35,16 +35,17 @@ Scenario 1: Rs. 5 + Rs. 5 + Rs. 5 → Product dispensed.
 
 
 Scenario 2: Rs. 10 + Rs. 5 → Product dispensed.
-![image](https://github.com/user-attachments/assets/9d3bb551-27af-4113-b041-f727a54e862a)
+<img width="861" height="159" alt="image" src="https://github.com/user-attachments/assets/e8b4b566-1d69-4c7e-b977-11015abe4208" />
+
 
 
 Scenario 3: Rs. 10 + Rs. 10 → Product dispensed with Rs. 5 change.
-![image](https://github.com/user-attachments/assets/a911284d-195f-4b5a-aa7c-b45017ed6d63)
+<img width="838" height="156" alt="image" src="https://github.com/user-attachments/assets/a330af1b-a5f8-483a-ab1b-a65a6959cd6d" />
+
 
 
 Scenario 4: Rs. 5 + No further input → Refund Rs. 5.
-![image](https://github.com/user-attachments/assets/e43d1386-a873-4151-a3a9-b4ad28804449)
-
+<img width="812" height="166" alt="image" src="https://github.com/user-attachments/assets/78d95783-75d0-4fb9-9282-0b2534b857fa" />
 
 **Results**
 
