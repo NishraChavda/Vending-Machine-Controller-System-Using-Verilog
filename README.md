@@ -30,7 +30,8 @@ S2: Rs. 10 inserted.
 **Simulation**
 
 Scenario 1: Rs. 5 + Rs. 5 + Rs. 5 → Product dispensed.
-![image](https://github.com/user-attachments/assets/27217f46-d3b7-46af-99b7-4cd789c41983)
+<img width="986" height="160" alt="image" src="https://github.com/user-attachments/assets/671292be-a397-4600-af6b-762946245529" />
+
 
 
 Scenario 2: Rs. 10 + Rs. 5 → Product dispensed.
